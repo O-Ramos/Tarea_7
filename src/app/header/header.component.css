@@ -1,0 +1,10 @@
+/* AppComponent's private CSS styles */
+  
+  nav a:hover {
+    color: #039be5;
+    background-color: #00b3ff;
+  }
+  
+  ul {
+      list-style: none;
+  }

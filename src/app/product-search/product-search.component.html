@@ -1,0 +1,13 @@
+<div id="search-component">
+    <form class="form-inline my-2 my-lg-0" *ngIf="productos$">
+        <input #searchBox id="search-box" (input)="search(searchBox.value)" class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+    </form>
+    <ul class="search-result">
+      <li *ngFor="let product of productos$ | async" >
+        <a routerLink="/productos/{{producto.id}}">
+          {{producto.model}}
+        </a>
+      </li>
+    </ul>
+</div>

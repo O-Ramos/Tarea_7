@@ -1,0 +1,40 @@
+<body>
+    
+
+    <div class="container" id="mcont" *ngIf="producto">
+    
+        <h2>Detalles {{producto.nombre | uppercase}}</h2>
+        <hr>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div><span>ID: </span>{{producto.id}}</div>
+                    <div><span>Modelo: </span>{{producto.modelo}}</div>
+                    <div><span>Marca: </span>{{producto.marca}}</div>
+                    <div><span>Categoria: </span>{{producto.categoria}}</div>
+                    <div><span>Precio: $</span>{{producto.precio}}</div>
+                    <div><span>Existencia: </span>{{producto.existencia}}</div>
+                </div>
+    
+                <div class="col">
+                  <a class="media-left" href="#">
+                    <img class="rounded-circle" src="http://lorempixel.com/200/200/technics/{{producto.id}}" alt="">
+                  </a>
+                </div>
+            </div>
+        </div>    
+    
+        <div class="row">
+            <div class="col">
+                  <button type="button" class="btn btn-light" (click)="goBack()">Regresar</button>    
+            </div>
+            <div class="col">
+                  <button type="button" class="btn btn-success" (click)="getCart()">Agregar a Carrito</button>
+            </div>
+        </div>
+        
+        
+      
+    </div>
+    
+    </body>

@@ -1,0 +1,16 @@
+
+  h2 {
+    color: darkcyan;
+    font-family: 'Lucida Sans';
+    font-style: oblique;
+    margin-left: 50px;
+  }
+  a {
+      color: rgb(4, 54, 134);
+  }
+  
+  body {
+      padding-top: 20px;
+      padding-bottom: 20px;
+  }
+  

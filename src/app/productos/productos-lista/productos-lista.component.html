@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row">
+    <div class="col-10">
+      <!--<h2 *ngIf="!esCarrito">Productos por agregar: {{elementosSeleccionados.length}}</h2> 
+            <h1 *ngIf="esCarrito">Carrito</h1>-->
+    </div>
+    <!-- <div class="col-4">
+      <button class="btn btn-success" style="width:200px; margin:10px;" *ngIf="!esCarrito"
+        (click)="enviarACarrito()">Agregar seleccionados</button>
+      <h1 *ngIf="esCarrito" style="">Total: ${{obtenerPrecio()}}</h1>
+    </div> -->
+  </div>
+
+  <app-productos-item *ngFor="let product of productos" [producto]="product"></app-productos-item>
+  <!-- <a routerLink="/productos/productos-lista/{{producto.id}}"> -->
+
+
+
